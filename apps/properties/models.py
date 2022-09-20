@@ -60,7 +60,9 @@ class Property(TimeStampedUUIDModel):
         default="IN",
         blank_label="(select country)",
     )
-    city = models.CharField(verbose_name=_("City"), max_length=180, default="Chandigarh")
+    city = models.CharField(
+        verbose_name=_("City"), max_length=180, default="Chandigarh"
+    )
     postal_code = models.CharField(
         verbose_name=_("Postal Code"), max_length=100, default="140308"
     )
